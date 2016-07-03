@@ -1,0 +1,11 @@
+﻿<configuration>
+	<configSections>
+		<sectionGroup name="moca">
+			<section name="settings" type="Moca.Config.MocaSectionHandler, Moca" />
+		</sectionGroup>
+	</configSections>
+	<connectionStrings configSource="bin\Config\db.config" />
+	<moca>
+		<settings configSource="bin\Config\Moca.config" />
+	</moca>
+</configuration>
