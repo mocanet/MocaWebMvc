@@ -1,5 +1,6 @@
 # Moca.NET Web MVC
 
+[![Build status](https://ci.appveyor.com/api/projects/status/gcjg06b7g0hs9p3d?svg=true)](https://ci.appveyor.com/project/miyabis/mocawebmvc)
 [![NuGet](https://img.shields.io/nuget/v/Moca.NETWebMvc.svg)](https://www.nuget.org/packages/Moca.NETWebMvc/)
 [![NuGet Pre Release](https://img.shields.io/nuget/vpre/Moca.NETWebMvc.svg)](https://www.nuget.org/packages/Moca.NETWebMvc/)
 
