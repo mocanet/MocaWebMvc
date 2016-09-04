@@ -28,9 +28,6 @@
     <tags></tags>
   </metadata>
   <files>
-    <file src="lib\" target="lib" />
-    <file src="tools\" target="tools" />
-    <file src="content\" target="content" />
     <file src="..\MocaWebMvc40\bin\Release\MocaWebMVC.dll" target="lib\net40\MocaWebMVC.dll" />
     <file src="..\MocaWebMvc40\bin\Release\MocaWebMVC.xml" target="lib\net40\MocaWebMVC.xml" />
     <file src="..\MocaWebMvc45\bin\Release\MocaWebMVC.dll" target="lib\net45\MocaWebMVC.dll" />
