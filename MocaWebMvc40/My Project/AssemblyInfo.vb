@@ -18,7 +18,7 @@ Imports System.Runtime.InteropServices
 <Assembly: ComVisible(True)> 
 
 'このプロジェクトが COM に公開される場合、次の GUID がタイプ ライブラリの ID になります。
-<Assembly: Guid("f13cf433-cc78-4f8b-b784-7d8b82b2d6b2")> 
+<Assembly: Guid("f13cf433-cc78-4f8b-b784-7d8b82b2d6b2")>
 
 ' アセンブリのバージョン情報は、以下の 4 つの値で構成されています:
 '
@@ -31,8 +31,8 @@ Imports System.Runtime.InteropServices
 ' 既定値にすることができます:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("4.0.0")> 
-<Assembly: AssemblyFileVersion("4.0.0")> 
+<Assembly: AssemblyVersion("4.0.1")>
+<Assembly: AssemblyFileVersion("4.0.1")>
 
 ' プログラム要素が CLS (Common Language Specification) に準拠しているかどうかを示します
 <Assembly: System.CLSCompliant(True)> 
