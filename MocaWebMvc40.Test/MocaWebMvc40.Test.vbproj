@@ -46,21 +46,18 @@
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
-      <HintPath>..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.8\lib\net40-full\log4net.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Moca, Version=4.0.5.0, Culture=neutral, PublicKeyToken=42f7e4f7232a6bf5, processorArchitecture=MSIL">
-      <HintPath>..\packages\Moca.NETCore.2.3.1\lib\net40-full\Moca.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Moca, Version=5.0.0.0, Culture=neutral, PublicKeyToken=42f7e4f7232a6bf5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Moca.NETCore.3.0.0-beta01\lib\net40\Moca.dll</HintPath>
     </Reference>
-    <Reference Include="MocaConfiguration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0e6be2f542e46d17, processorArchitecture=MSIL">
-      <HintPath>..\packages\Moca.NETConfiguration.1.0.2\lib\net40\MocaConfiguration.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="MocaConfiguration, Version=5.0.0.0, Culture=neutral, PublicKeyToken=0e6be2f542e46d17, processorArchitecture=MSIL">
+      <HintPath>..\packages\Moca.NETConfiguration.2.0.0-beta01\lib\net40\MocaConfiguration.dll</HintPath>
     </Reference>
-    <Reference Include="MocaWeb, Version=4.0.0.0, Culture=neutral, PublicKeyToken=da608a5a6b312f44, processorArchitecture=MSIL">
-      <HintPath>..\packages\Moca.NETWebApp.2.1.0-beta\lib\net40-full\MocaWeb.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="MocaWeb, Version=5.0.0.0, Culture=neutral, PublicKeyToken=da608a5a6b312f44, processorArchitecture=MSIL">
+      <HintPath>..\packages\Moca.NETWebApp.3.0.0-beta01\lib\net40\MocaWeb.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -226,9 +223,12 @@
   <ItemGroup>
     <Content Include="Content\MocaSite.css" />
     <Content Include="Content\MocaSite.min.css" />
-    <Content Include="log4net.Release.config" />
-    <Content Include="log4net.Main.config" />
-    <Content Include="log4net.Hotfix.config" />
+    <Content Include="log4net.Hotfix.config">
+      <DependentUpon>log4net.config</DependentUpon>
+    </Content>
+    <Content Include="log4net.Main.config">
+      <DependentUpon>log4net.config</DependentUpon>
+    </Content>
     <Content Include="log4net.config" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
@@ -293,11 +293,18 @@
     <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="log4net.Release.config">
+      <DependentUpon>log4net.config</DependentUpon>
+    </Content>
     <Content Include="packages.config" />
     <None Include="Views\Moca\Index.vbhtml" />
     <Content Include="Views\Shared\_MocaLayout.vbhtml" />
-    <None Include="Web.Hotfix.config" />
-    <None Include="Web.Main.config" />
+    <None Include="Web.Hotfix.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Main.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
@@ -335,7 +342,7 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MocaWebMvc40\MocaWebMvc40.vbproj">
+    <ProjectReference Include="..\MocaWebMvc\MocaWebMvc40.vbproj">
       <Project>{a0412a17-735b-4d8b-875e-65682cd24d09}</Project>
       <Name>MocaWebMvc40</Name>
     </ProjectReference>

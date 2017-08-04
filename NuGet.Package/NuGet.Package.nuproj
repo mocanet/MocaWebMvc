@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MocaWebMvc\MocaWebMvc40.vbproj" />
+    <ProjectReference Include="..\MocaWebMvc\MocaWebMvc45.vbproj" />
+    <ProjectReference Include="..\MocaWebMvc\MocaWebMvc452.vbproj" />
+    <ProjectReference Include="..\MocaWebMvc\MocaWebMvc46.vbproj" />
+    <ProjectReference Include="..\MocaWebMvc\MocaWebMvc462.vbproj" />
+    <ProjectReference Include="..\MocaWebMvc\MocaWebMvc47.vbproj" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>bee9389f-7e6e-4af9-914f-8fd41774ffde</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <id>Moca.NETWebMvc</id>
+    <version>3.0.0-beta01</version>
+    <title>Moca.NET Web MVC</title>
+    <authors>MiYABiS</authors>
+    <owners>MiYABiS</owners>
+    <description>DI with AOP framework Moca.NET Web MVC</description>
+    <releaseNotes>
+    </releaseNotes>
+    <summary>DI with AOP framework Moca.NET Web MVC</summary>
+    <language>en-US</language>
+    <ProjectUrl>https://github.com/mocanet/MocaWebMvc</ProjectUrl>
+    <IconUrl>https://avatars3.githubusercontent.com/u/14543303?s=256</IconUrl>
+    <LicenseUrl>https://opensource.org/licenses/MS-PL</LicenseUrl>
+    <copyright>Copyright © 2014 MiYABiS All Rights Reserved.</copyright>
+    <Tags>Moca.NET MVC</Tags>
+    <EmbedSourceFiles>true</EmbedSourceFiles>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NuProjPath>..\packages\NuProj.0.11.30\tools\</NuProjPath>
+  </PropertyGroup>
+  <Import Project="$(NuProjPath)\NuProj.props" Condition="Exists('$(NuProjPath)\NuProj.props')" />
+  <Import Project="$(NuProjPath)\NuProj.targets" />
+</Project>

@@ -1,10 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MocaWebMvc40", "MocaWebMvc40\MocaWebMvc40.vbproj", "{A0412A17-735B-4D8B-875E-65682CD24D09}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A1366676-4725-4B46-828B-965B2F674F84}"
 	ProjectSection(SolutionItems) = preProject
 		LICENSE.md = LICENSE.md
@@ -16,20 +14,26 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{E55C4A
 		.nuget\NuGet.Config = .nuget\NuGet.Config
 		.nuget\NuGet.exe = .nuget\NuGet.exe
 		.nuget\NuGet.targets = .nuget\NuGet.targets
+		.nuget\packages.config = .nuget\packages.config
 	EndProjectSection
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MocaWebMvc40.Test", "MocaWebMvc40.Test\MocaWebMvc40.Test.vbproj", "{43F6506F-35AE-4F83-BAFF-4F16E51B21F8}"
 EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MocaWebMvc45", "MocaWebMvc45\MocaWebMvc45.vbproj", "{20B964F4-1954-413E-A965-E129B7E2E271}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MocaWebMvc40", "MocaWebMvc\MocaWebMvc40.vbproj", "{A0412A17-735B-4D8B-875E-65682CD24D09}"
 EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MocaWebMvc46", "MocaWebMvc46\MocaWebMvc46.vbproj", "{5E4A2722-7023-4F69-ACEB-309909BDBA54}"
+Project("{FF286327-C783-4F7A-AB73-9BCBAD0D4460}") = "NuGet.Package", "NuGet.Package\NuGet.Package.nuproj", "{BEE9389F-7E6E-4AF9-914F-8FD41774FFDE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuGet.Packager", "NuGet.Packager\NuGet.Packager.csproj", "{0451BAEF-DF2E-4B98-8644-94EE9415E389}"
-	ProjectSection(ProjectDependencies) = postProject
-		{A0412A17-735B-4D8B-875E-65682CD24D09} = {A0412A17-735B-4D8B-875E-65682CD24D09}
-		{5E4A2722-7023-4F69-ACEB-309909BDBA54} = {5E4A2722-7023-4F69-ACEB-309909BDBA54}
-		{20B964F4-1954-413E-A965-E129B7E2E271} = {20B964F4-1954-413E-A965-E129B7E2E271}
-	EndProjectSection
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MocaWebMvc45", "MocaWebMvc\MocaWebMvc45.vbproj", "{CCC8E58F-70F2-4F71-9F89-021735ED220E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{F0466CEC-D0B0-4C0C-A87A-A58331A4225B}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MocaWebMvc46", "MocaWebMvc\MocaWebMvc46.vbproj", "{D914119C-6C9B-4CE9-99ED-D11886CAEC64}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MocaWebMvc47", "MocaWebMvc\MocaWebMvc47.vbproj", "{97FF50A2-2FDE-4782-A763-4689C67E4BED}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MocaWebMvc452", "MocaWebMvc\MocaWebMvc452.vbproj", "{53C906AB-6B18-48E6-B773-7E9DAD35606B}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MocaWebMvc462", "MocaWebMvc\MocaWebMvc462.vbproj", "{5B0EB68B-6B51-4704-BBC2-9403386B91F4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,27 +41,42 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43F6506F-35AE-4F83-BAFF-4F16E51B21F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43F6506F-35AE-4F83-BAFF-4F16E51B21F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43F6506F-35AE-4F83-BAFF-4F16E51B21F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0412A17-735B-4D8B-875E-65682CD24D09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A0412A17-735B-4D8B-875E-65682CD24D09}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0412A17-735B-4D8B-875E-65682CD24D09}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0412A17-735B-4D8B-875E-65682CD24D09}.Release|Any CPU.Build.0 = Release|Any CPU
-		{43F6506F-35AE-4F83-BAFF-4F16E51B21F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{43F6506F-35AE-4F83-BAFF-4F16E51B21F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{43F6506F-35AE-4F83-BAFF-4F16E51B21F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{20B964F4-1954-413E-A965-E129B7E2E271}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{20B964F4-1954-413E-A965-E129B7E2E271}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{20B964F4-1954-413E-A965-E129B7E2E271}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{20B964F4-1954-413E-A965-E129B7E2E271}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5E4A2722-7023-4F69-ACEB-309909BDBA54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5E4A2722-7023-4F69-ACEB-309909BDBA54}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5E4A2722-7023-4F69-ACEB-309909BDBA54}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5E4A2722-7023-4F69-ACEB-309909BDBA54}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0451BAEF-DF2E-4B98-8644-94EE9415E389}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0451BAEF-DF2E-4B98-8644-94EE9415E389}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0451BAEF-DF2E-4B98-8644-94EE9415E389}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0451BAEF-DF2E-4B98-8644-94EE9415E389}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEE9389F-7E6E-4AF9-914F-8FD41774FFDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEE9389F-7E6E-4AF9-914F-8FD41774FFDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEE9389F-7E6E-4AF9-914F-8FD41774FFDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEE9389F-7E6E-4AF9-914F-8FD41774FFDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCC8E58F-70F2-4F71-9F89-021735ED220E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCC8E58F-70F2-4F71-9F89-021735ED220E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCC8E58F-70F2-4F71-9F89-021735ED220E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCC8E58F-70F2-4F71-9F89-021735ED220E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D914119C-6C9B-4CE9-99ED-D11886CAEC64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D914119C-6C9B-4CE9-99ED-D11886CAEC64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D914119C-6C9B-4CE9-99ED-D11886CAEC64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D914119C-6C9B-4CE9-99ED-D11886CAEC64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97FF50A2-2FDE-4782-A763-4689C67E4BED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97FF50A2-2FDE-4782-A763-4689C67E4BED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97FF50A2-2FDE-4782-A763-4689C67E4BED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97FF50A2-2FDE-4782-A763-4689C67E4BED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53C906AB-6B18-48E6-B773-7E9DAD35606B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53C906AB-6B18-48E6-B773-7E9DAD35606B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53C906AB-6B18-48E6-B773-7E9DAD35606B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53C906AB-6B18-48E6-B773-7E9DAD35606B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B0EB68B-6B51-4704-BBC2-9403386B91F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B0EB68B-6B51-4704-BBC2-9403386B91F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B0EB68B-6B51-4704-BBC2-9403386B91F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B0EB68B-6B51-4704-BBC2-9403386B91F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{43F6506F-35AE-4F83-BAFF-4F16E51B21F8} = {F0466CEC-D0B0-4C0C-A87A-A58331A4225B}
 	EndGlobalSection
 EndGlobal

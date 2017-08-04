@@ -12,7 +12,7 @@ Public Class RouteConfig
         routes.MapRoute( _
             name:="Default", _
             url:="{controller}/{action}/{id}", _
-            defaults:=New With {.controller = "Home", .action = "Index", .id = UrlParameter.Optional} _
+            defaults:=New With {.controller = "Moca", .action = "Index", .id = UrlParameter.Optional} _
         )
     End Sub
 End Class
