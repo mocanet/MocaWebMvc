@@ -23,7 +23,7 @@
   </PropertyGroup>
   <PropertyGroup Label="Configuration">
     <id>Moca.NETWebMvc</id>
-    <version>3.0.0-beta01</version>
+    <version>3.0.0-beta02</version>
     <title>Moca.NET Web MVC</title>
     <authors>MiYABiS</authors>
     <owners>MiYABiS</owners>
